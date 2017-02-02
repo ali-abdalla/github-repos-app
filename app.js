@@ -1,35 +1,35 @@
 // Modules
-var weatherApp = angular.module('weatherApp', ['ngRoute', 'ngResource']);
+var githubReposApp = angular.module('githubReposApp', ['ngRoute', 'ngResource']);
 
 // Routes
-weatherApp.config(function($routeProvider, $locationProvider) {
+githubReposApp.config(function($routeProvider, $locationProvider) {
   $locationProvider.hashPrefix('');
   $routeProvider
     .when('/', {
       templateUrl: 'pages/home.html',
       controller: 'homeController'
     })
-    .when('/forecast', {
-      templateUrl: 'pages/forecast.html',
-      controller: 'forecastController'
+    .when('/repos', {
+      templateUrl: 'pages/repos.html',
+      controller: 'reposController'
     });
 });
 
 // Services
-weatherApp.service('cityService', function() {
-  this.city = 'Cairo, Egypt';
+githubReposApp.service('userService', function() {
+  this.username = '';
 });
 
 // Controllers
-weatherApp.controller('homeController', ['$scope', 'cityService', function($scope, cityService) {
-  $scope.city = cityService.city;
-  $scope.$watch('city', function() {
-    cityService.city = $scope.city;
+githubReposApp.controller('homeController', ['$scope', 'userService', function($scope, userService) {
+  $scope.username = userService.username;
+  $scope.$watch('username', function() {
+    userService.username = $scope.username;
   });
 }]);
 
-weatherApp.controller('forecastController', ['$scope', 'cityService', function($scope, cityService) {
-  $scope.city = cityService.city;
+githubReposApp.controller('reposController', ['$scope', 'userService', function($scope, userService) {
+  $scope.username = userService.username;
 }]);
 
 window.addEventListener('hashchange', function() {

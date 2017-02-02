@@ -1,7 +1,7 @@
 {
-  "name": "weather-forecast-app",
+  "name": "github-repos-app",
   "version": "1.0.0",
-  "description": "Weather forecast application, developed by AnguarJs",
+  "description": "Github Repos application, developed by AnguarJs",
   "main": "server.js",
   "dependencies": {
     "express": "^4.14.1",
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ali-abdalla/weather-forecast-app.git"
+    "url": "git+https://github.com/ali-abdalla/github-repos-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ali-abdalla/weather-forecast-app/issues"
+    "url": "https://github.com/ali-abdalla/github-repos-app/issues"
   },
-  "homepage": "https://github.com/ali-abdalla/weather-forecast-app#readme"
+  "homepage": "https://github.com/ali-abdalla/github-repos-app#readme"
 }

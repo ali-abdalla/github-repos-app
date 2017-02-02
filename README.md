@@ -1,2 +1,2 @@
-# weather-forecast-app
-Weather forecast application, developed by AnguarJs
+# Github Repos App
+Github repos app, developed by AnguarJs
