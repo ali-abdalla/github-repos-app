@@ -1,1 +1,16 @@
-Repos for {{city}}
+Repos for {{username}}
+
+<div ng-repeat="repo in repos">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a href="{{ repo.git_url }}" class="panel-title">{{ repo.name }}</a>
+        </div>
+        <div class="panel-body">
+          Language: {{ repo.language }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
